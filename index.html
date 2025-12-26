@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <title> Luas Kalkulator</title>
+
+    <style>
+        .merah {
+        height: 21;
+        background-color: aliceblue;
+        font: 100;
+        color:red;
+
+        }
+        .hijau {
+        height: 21;
+        background-color: green;
+
+
+        }
+        .kuning {
+        height: 21;
+        background-color: aliceblue;
+        font: 100;
+        color:red;
+
+        }
+        .biru {
+        height: 21;
+        background-color: aliceblue;
+        font: 100;
+        color:red;
+
+        }
+        .ungu {
+        height: 21;
+        background-color: aliceblue;
+        font: 100;
+        color:red;
+
+        }
+        .aqua {
+        height: 21;
+        background-color: aliceblue;
+        font: 100;
+        color:red;
+
+        }
+
+
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1>MENU</h1>
+    <ol>
+        <li>Persegi panjang</li>
+        <li>Persegi</li>
+        <li>segitiga</li>
+        <li>lingkaran</li>
+
+
+    </ol>
+    <h2> Persegi Panjang</h2>
+
+    Masukan Panjang: <input type="number" class="merah" id="panjang"></input> <br>
+    Masukan Lebar: <input type="number" id="lebar"></input> <br>
+    <button onclick="calculatePersegiPanjang()">Hitung</button>
+    Hasil luas </label><input type="number" id="hasilpp"></input><br>
+
+    <script>
+
+        function calculatePersegiPanjang() {
+            const panjang = document.getElementById("panjang").value;
+            const lebar = document.getElementById("lebar").value;
+            const luas = panjang * lebar;
+
+            console.log("panjang:", panjang)
+            console.log("lebar:", lebar)
+            console.log("luas:", luas)
+
+
+
+            document.getElementById("hasilpp").value = luas;
+        }
+
+    </script>
+
+    <h2> Persegi</h2>
+
+    Masukan Sisi 1: <input type="number" id="Sisi1"></input> <br>
+    <button onclick="calculatePersegi()">Hitung</button>
+    Hasil luas persegi </label><input type="number" id="hasilpersegi"></input><br>
+
+    <script>
+
+        function calculatePersegi() {
+            const Sisi1 = document.getElementById("Sisi1").value;
+            const luaspersegi = Sisi1 * Sisi1;
+
+            console.log("Sisi 1:", Sisi1)
+            console.log("luas persegi:", luaspersegi)
+
+
+
+            document.getElementById("hasilpersegi").value = luaspersegi;
+        }
+
+    </script>
+
+    <h2>Segitiga</h2>
+
+    Masukan alas: <input type="number" id="alas"></input> <br>
+    Masukan tinggi: <input type="number" id="tinggi"></input> <br>
+    <button onclick="calculatesegitiga()">Hitung</button>
+    Hasil luas segitiga </label><input type="number" id="hasilsegitiga"></input><br>
+
+    <script>
+
+        function calculatesegitiga() {
+            const alas = document.getElementById("alas").value;
+            const tinggi = document.getElementById("tinggi").value;
+            const luassegitiga = alas * tinggi * 1 / 2;
+
+            console.log("alas:", alas)
+            console.log("tinggi:", tinggi)
+            console.log("luas segitiga:", luassegitiga)
+
+
+
+            document.getElementById("hasilsegitiga").value = luassegitiga;
+        }
+
+    </script>
+
+    <h2>Lingkaran</h2>
+
+    Masukan jari-jari: <input type="number" id="jari-jari"></input> <br>
+    <button onclick="calculatelingkaran()">Hitung</button>
+    Hasil luas lingkaran </label><input type="number" id="hasillingkaran"></input><br>
+
+    <script>
+
+        function calculatelingkaran() {
+            const jari = document.getElementById("jari-jari").value;
+            // const tinggi = document.getElementById("tinggi").value;
+            const luaslingkaran = jari * jari * 22 / 7;
+
+            // console.log("alas:",alas)
+            console.log("jari-jari:", jari)
+            console.log("luas lingkaran:", luaslingkaran)
+
+
+
+            document.getElementById("hasillingkaran").value = luaslingkaran;
+        }
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>

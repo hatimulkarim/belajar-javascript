@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Latihan tabak angka kedua</title>
+
+
+
+<body>
+    <h2>silahkan masukkan angka tebkanmu!</h2>
+    <button id="randomnumber" oneclick="generaterandomnumber()"> Check!</button>
+    <input type="hidden" id="guessnumber" class="desain">
+    <label>Masukkan angka</label><input id="guess" type="number" class="desain"><br>
+
+    <script>
+        function generaterandomnumber() {
+            const calculate = Math.random() * 10
+            const number2 = Math.floor(calculate);
+            document.getElementById("guessnumber").value = randomint;
+        }
+        const randomizer = document.getElementById("number");
+        randomizer.addEventListener("keydown", function (event){
+if(event.key == "Enter"){
+    const number3 = document.getElementById("guessnumber"). value;
+    const insertnumber = document.getElementById ("number"). value;
+    if(calculate == guessnumber){
+window.alert ("Benar!")
+}
+else {
+window.alert ("Salah!")
+
+}
+
+
+}
+
+
+
+
+        })
+
+
+
+
+
+    
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</head>
+
+
+
+
+</html>
